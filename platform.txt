@@ -20,7 +20,7 @@
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
 name=Xplained Niladri SAMC21(32-bits ARM Cortex-M0+) Boards
-version=1.8.11
+version=1.0.0
 
 # Compile variables
 # -----------------
@@ -149,8 +149,8 @@ tools.bossac.cmd.windows=bossac.exe
 
 tools.bossac.upload.params.verbose=-i -d
 tools.bossac.upload.params.quiet=
-#tools.bossac.upload.pattern="{path}/{cmd}" {upload.verbose} --port={serial.port.file} -U {upload.native_usb} -i -e -w -v "{build.path}/{build.project_name}.bin" -R
-tools.bossac.upload.pattern="C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atprogram.exe" -t edbg -i SWD -d atsamc21j18a program -f "{build.path}/{build.project_name}.elf" --verify
+tools.bossac.upload.pattern="{path}/{cmd}" {upload.verbose} --port={serial.port.file} -U {upload.native_usb} -i -e -w -v "{build.path}/{build.project_name}.bin" -R
+#tools.bossac.upload.pattern="C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atprogram.exe" -t edbg -i SWD -d atsamc21j18a program -f "{build.path}/{build.project_name}.elf" --verify
 
 tools.bossac_remote.upload.pattern=/usr/bin/run-bossac {upload.verbose} --port=ttyATH0 -U {upload.native_usb} -e -w -v /tmp/sketch.bin -R
 
@@ -172,6 +172,10 @@ tools.bossacI_remote.upload.pattern=/usr/bin/run-bossac {upload.verbose} --port=
 tools.bossacI.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
 tools.bossacI.upload.network_pattern="{network_cmd}" -address {serial.port} -port 65280 -username arduino -password "{network.password}" -sketch "{build.path}/{build.project_name}.bin" -upload /sketch -b
 
+# Atmel atprogram Support (Curiosity_Niladri)
+tools.atprogram.path = "C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atprogram.exe"
+tools.atprogram.upload.params.verbose=-i -d
+tools.atprogram.upload.pattern={path} -t {upload.protocol} -i {upload.interface} -d {build.chip} program -f "{build.path}/{build.project_name}.elf" --verify
 
 #
 # OpenOCD sketch upload

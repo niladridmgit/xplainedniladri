@@ -1,11 +1,22 @@
+menu.chip=Chip
+menu.tool=Tool
+menu.protocol=Protocol
+menu.interface=Interface
 
 # Xplained Niladri SAMC21 (SAMC21)
 # ---------------------------------------
+samc21_xplained_Niladri.build.chip={build.samc21}
 samc21_xplained_Niladri.name=Xplained Niladri SAMC21 (SAMC21)
 samc21_xplained_Niladri.vid.0=0x03eb
 samc21_xplained_Niladri.pid.0=0x2157
-samc21_xplained_Niladri.upload.tool=bossac
+samc21_xplained_Niladri.upload.tool=atprogram
 samc21_xplained_Niladri.upload.protocol=sam-ba
+samc21_xplained_Niladri.menu.tool.atprogram=atprogram
+samc21_xplained_Niladri.upload.tool=atprogram
+samc21_xplained_Niladri.menu.protocol.edbg=edbg
+samc21_xplained_Niladri.upload.protocol=edbg
+samc21_xplained_Niladri.menu.interface.SWD=SWD
+samc21_xplained_Niladri.upload.interface=SWD
 samc21_xplained_Niladri.upload.maximum_size=262144
 samc21_xplained_Niladri.upload.use_1200bps_touch=false
 samc21_xplained_Niladri.upload.wait_for_upload_port=false
@@ -16,7 +27,10 @@ samc21_xplained_Niladri.build.usb_product="Xplained Niladri"
 samc21_xplained_Niladri.build.usb_manufacturer="CareRealSense"
 samc21_xplained_Niladri.build.board=EXPLAINEDNILADRI
 samc21_xplained_Niladri.build.core=arduino
-samc21_xplained_Niladri.build.extra_flags=-D__SAMC21J18A__ -DCLOCKCONFIG_32768HZ_CRYSTAL
+samc21_xplained_Niladri.menu.chip.SAMC21J18A=SAMC21J18A
+samc21_xplained_Niladri.menu.chip.SAMC21J18A.build.samc21=atsamc21j18a
+samc21_xplained_Niladri.menu.chip.SAMC21J18A.build.extra_flags=-D__SAMC21J18A__ -DCLOCKCONFIG_32768HZ_CRYSTAL
+#samc21_xplained_Niladri.build.extra_flags=-D__SAMC21J18A__ -DCLOCKCONFIG_32768HZ_CRYSTAL
 samc21_xplained_Niladri.build.ldscript=linker_scripts/gcc/flash_without_bootloader.ld
 samc21_xplained_Niladri.build.openocdscript=openocd_scripts/samc21_xplained_pro.cfg
 samc21_xplained_Niladri.build.variant=xplainedniladri
