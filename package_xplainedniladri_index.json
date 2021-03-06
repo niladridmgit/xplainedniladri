@@ -172,7 +172,7 @@
             {
               "host": "i686-mingw32",
               "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-arduino3-windows.tar.gz",
-              "archiveFileName": "bossac-1.7.0-arduino3-windows.tar-xplainedniladri.gz",
+              "archiveFileName": "bossac-1.7.0-arduino3-windows-xplainedniladri.tar.gz",
               "checksum": "SHA-256:62745cc5a98c26949ec9041ef20420643c561ec43e99dae659debf44e6836526",
               "size": "3607421"
             },
