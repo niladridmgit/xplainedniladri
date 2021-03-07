@@ -1,4 +1,4 @@
-**Custom Package of ArduinoCore-samd**
+**This is Custom Package of ArduinoCore-samd, SAMC21 support added**
 
 **Original Link:** https://github.com/arduino/ArduinoCore-samd
 
