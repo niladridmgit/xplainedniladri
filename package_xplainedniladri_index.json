@@ -58,6 +58,56 @@
               "version": "1.2.1"
             }
           ]
+        },
+		{
+          "name": "xplainedniladri",
+          "architecture": "samc",
+          "category": "xplainedniladri",
+          "version": "1.1.0",
+          "url": "https://raw.githubusercontent.com/niladridmgit/xplainedniladri/master/download/xplainedniladri-1.1.0.zip",
+          "archiveFileName": "xplainedniladri-1.1.0.zip",
+          "checksum": "SHA-256:195153097b8325d7c2c3adb144067b6cf562ac4b5a62dcbf64a2ca8b51fdc720",
+          "size": "642439",
+          "help": {
+            "online": "https://github.com/niladridmgit/xplainedniladri"
+          },
+          "boards": [
+            {
+              "name": "xplainedniladri"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "xplainedniladri",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "xplainedniladri",
+              "name": "bossac",
+              "version": "1.7.0-arduino3"
+            },
+            {
+              "packager": "xplainedniladri",
+              "name": "openocd",
+              "version": "0.10.0-arduino7"
+            },
+            {
+              "packager": "xplainedniladri",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "xplainedniladri",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            },
+            {
+              "packager": "xplainedniladri",
+              "name": "arduinoOTA",
+              "version": "1.2.1"
+            }
+          ]
         }
       ],
       "tools":[
