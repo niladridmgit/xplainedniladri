@@ -127,6 +127,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define PIN_SPI_MISO         (22u)
 #define PIN_SPI_MOSI         (24u)
 #define PIN_SPI_SCK          (23u)
+#define PIN_SPI_SS           (10u)
 #define PERIPH_SPI           sercom5
 #define PAD_SPI_TX           SPI_PAD_2_SCK_3
 #define PAD_SPI_RX           SERCOM_RX_PAD_0
